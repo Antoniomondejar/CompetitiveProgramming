@@ -2,18 +2,20 @@
 using namespace std;
 
 int main(void){
-    long long n, k;
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    int n, k;
     cin >> n >> k;
-    long long powers_of_two[30];
+    int powers_of_two[30];
     powers_of_two[0] = 1;
     for(int i = 1; i < 30; ++i)
         powers_of_two[i] = powers_of_two[i-1]*2;
 
-    queue <int> terms;
-    long long remainder = n; int i = 0;
+    queue <unsigned char> terms;
+    int remainder = n; unsigned char i = (char)0;
     while(remainder > 0){ // Menor cantidad de términos.
         i = 0;
-        while (powers_of_two[i]<remainder){
+        while (i < 30 && powers_of_two[i]<remainder){
             ++i;
         }
         if (remainder == powers_of_two[i]){
@@ -25,6 +27,7 @@ int main(void){
         }
     }
     int queue_length = terms.size();
+    // cout << queue_length << endl;
     if (k < terms.size() || k > n){
         cout << "NO" << endl;
         return 0;
@@ -39,10 +42,12 @@ int main(void){
     }
 
     int current_power_of_two = terms.front();
-    while(k > terms.size()){
+    int terms_length = terms.size();
+    while(k > terms_length){
+        // cout << "hola" << endl;
         if(powers_of_two[current_power_of_two] == 1){
             terms.pop();
-            terms.push(0);
+            terms.push((char)0);
             current_power_of_two = terms.front();
             continue;
         }
@@ -50,10 +55,10 @@ int main(void){
         terms.push(current_power_of_two-1);
         terms.push(current_power_of_two-1);
         current_power_of_two = terms.front();
+        ++terms_length;
     }
-    queue_length = terms.size();
     cout << "YES" << endl;
-    for(int i = 0; i < queue_length; ++i){
+    for(int i = 0; i < k; ++i){
         cout << powers_of_two[terms.front()] << " ";
         terms.pop();
     }

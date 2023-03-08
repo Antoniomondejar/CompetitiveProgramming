@@ -53,7 +53,7 @@ int main(void){
     if(lights_out){
         cout << iteration_counter << endl;
     } else {
-        cout << -1 << endl;
     }
+        cout << -1 << endl;
     return 0;
 }
