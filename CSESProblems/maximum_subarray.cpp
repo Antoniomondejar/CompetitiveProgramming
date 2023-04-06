@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-#include <limits.h>
 
 int main(void){
     int n;
