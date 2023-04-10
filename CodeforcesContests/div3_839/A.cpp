@@ -1,9 +1,7 @@
 #include <bits/stdc++.h>
-#define mp make_pair
 #define pb push_back
 #define fst first
 #define snd second
-#define str string
 #define fore(i,a,b) for(int i=a,ggdem=b;i<ggdem;++i)
 #define SZ(x) ((int)x.size())
 #define ALL(x) x.begin(),x.end()
@@ -13,5 +11,10 @@ using namespace std;
 typedef long long ll;
 
 int main(){FIN;
+    ll t; cin >> t;
+    while(t--){
+        int a, b; char suma; cin >> a >> suma >> b;
+        cout << a+b << "\n";
+    }
     return 0;
 }
