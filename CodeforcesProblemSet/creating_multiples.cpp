@@ -52,7 +52,7 @@ D*B % (B+1) = B+1-D
 -> BECAUSE
 (B+1)*(D-1) = B*D-B+D-1 = (B*D)-(B+1-D)
 
-WITH THAT PROOVEN, IS EASY TO SEE THAT
+WITH THAT PROVEN, IS EASY TO SEE THAT
 
 (D_1 * B^(L-1) + D_2 * B^(L-2) + ... + D_L) % (B+1)
 {IF L IS EVEN}
