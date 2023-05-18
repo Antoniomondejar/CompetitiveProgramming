@@ -13,9 +13,15 @@ using namespace std;
 typedef long long ll;
 
 int main(){FIN;
+    ll n; cin >> n; ll b = 0;
+    while(n){
+        ++b;
+        if(n>=100)n-=100;
+        else if(n>=20)n-=20;
+        else if(n>=10)n-=10;
+        else if(n>=5)n-=5;
+        else n-=1;
+    }
+    cout << b << "\n";
     return 0;
 }
-
-/*
-DIEGO VAGGIONE -> MEJOR PROFE DE FAMAF.
-*/

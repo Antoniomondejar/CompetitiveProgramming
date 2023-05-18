@@ -13,9 +13,14 @@ using namespace std;
 typedef long long ll;
 
 int main(){FIN;
+    ll t; cin >> t;
+    while(t--){
+        ll n; cin >> n;
+        ll res = 26;
+        if(n>4){
+            res += n*(n+1)-20+n-4;
+        }
+        cout << res << "\n";
+    }
     return 0;
 }
-
-/*
-DIEGO VAGGIONE -> MEJOR PROFE DE FAMAF.
-*/

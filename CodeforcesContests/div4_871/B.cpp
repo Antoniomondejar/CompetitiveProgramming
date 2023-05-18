@@ -13,6 +13,22 @@ using namespace std;
 typedef long long ll;
 
 int main(){FIN;
+    ll t; cin >> t;
+    while(t--){
+        ll n; cin >> n;
+        vector<ll> a(n); fore(i,0,n)cin >> a[i];
+        ll res = 0; ll max_res = -1;
+        fore(i,0,n){
+            if(a[i] == 0){
+                ++res;
+            } else {
+                max_res = max(res,max_res);
+                res = 0;
+            }
+        }
+        max_res = max(res,max_res);
+        cout << max_res << "\n";
+    }
     return 0;
 }
 

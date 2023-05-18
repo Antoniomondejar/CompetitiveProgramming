@@ -13,6 +13,22 @@ using namespace std;
 typedef long long ll;
 
 int main(){FIN;
+    ll N; cin >> N;
+    string s; cin >> s;
+    ll a=0; ll t=0; char las='a';
+    fore(i,0,N){
+        if(s[i]=='T') ++t;
+        else ++a;
+        if(t>a){
+            las = 't';
+        } else if (a>t){
+            las = 'a';
+        }
+    }
+    if(a>t) cout << "A\n";
+    else if(t>a) cout << "T\n";
+    else if(a==t && las=='a') cout << "A\n";
+    else cout << "T\n";
     return 0;
 }
 

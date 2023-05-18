@@ -13,6 +13,17 @@ using namespace std;
 typedef long long ll;
 
 int main(){FIN;
+    ll t; cin >> t;
+    while(t--){
+        string c = "codeforces";
+        string s; cin >> s; ll res = 0;
+        fore(i,0,s.length()){
+            if(s[i] != c[i]){
+                ++res;
+            }    
+        }
+        cout << res << "\n";
+    }
     return 0;
 }
 

@@ -13,6 +13,20 @@ using namespace std;
 typedef long long ll;
 
 int main(){FIN;
+    ll t; cin >> t;
+    while(t--){
+        string s; cin >> s;
+        char f = s[0];
+        bool p = false;
+        fore(i,1,s.length()){
+            if(s[i] != f){
+                cout << s.length()-1 << "\n";
+                p = true;
+                break;
+            }
+        }
+        if(!p) cout << "-1\n";
+    }
     return 0;
 }
 

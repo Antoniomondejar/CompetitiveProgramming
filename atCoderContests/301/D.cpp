@@ -12,7 +12,18 @@
 using namespace std;
 typedef long long ll;
 
+
+
 int main(){FIN;
+    string S; cin >> S;
+    ll N; cin >> N;
+    vector<ll> bits;
+    for(ll i = 1LL<<60; i > 0; i = i/2){
+        
+    }
+    for(auto i:bits){
+        cout << i << " ";
+    }
     return 0;
 }
 

@@ -15,7 +15,3 @@ typedef long long ll;
 int main(){FIN;
     return 0;
 }
-
-/*
-DIEGO VAGGIONE -> MEJOR PROFE DE FAMAF.
-*/

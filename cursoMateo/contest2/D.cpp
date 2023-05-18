@@ -13,9 +13,18 @@ using namespace std;
 typedef long long ll;
 
 int main(){FIN;
+    ll n; cin >> n;
+    vector<ll> a(n);
+    fore(i,0,n){
+        ll inp;
+        cin>>inp;
+        if(i==0)a[i] = inp;
+        else a[i] = inp+a[i-1];
+    }
+    ll m; cin >> m;
+    fore(i,0,m){
+        ll inp; cin >> inp;
+        cout << (lower_bound(ALL(a), inp)-a.begin())+1<< "\n";
+    }
     return 0;
 }
-
-/*
-DIEGO VAGGIONE -> MEJOR PROFE DE FAMAF.
-*/

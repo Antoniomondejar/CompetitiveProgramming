@@ -13,9 +13,16 @@ using namespace std;
 typedef long long ll;
 
 int main(){FIN;
+    ll t; cin >> t;
+    while(t--){
+        ll n; cin >> n;
+        if (n == 1) {cout << 1 << "\n"; continue;}
+        if(n&1) {cout << -1 << "\n"; continue;}
+        fore(i,0,n){
+            if(i&1) cout << i << " ";
+            else cout << n-i << " ";
+        }
+        cout << "\n";
+    }
     return 0;
 }
-
-/*
-DIEGO VAGGIONE -> MEJOR PROFE DE FAMAF.
-*/

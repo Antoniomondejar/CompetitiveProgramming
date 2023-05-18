@@ -13,6 +13,19 @@ using namespace std;
 typedef long long ll;
 
 int main(){FIN;
+    ll t; cin >> t;
+    while(t--){
+        ll n; cin >> n;
+        if(n&1)
+            fore(i,1,n+1){
+                cout << i << " ";
+            }
+        else
+            fore(i,1,n+1){
+                cout << 2*i << " ";
+            }
+        cout << "\n";
+    }
     return 0;
 }
 

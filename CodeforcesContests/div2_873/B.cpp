@@ -13,6 +13,24 @@ using namespace std;
 typedef long long ll;
 
 int main(){FIN;
+    ll t; cin >> t;
+    while(t--){
+        ll n; cin >> n;
+        vector<ll> a(n);
+        fore(i,0,n) cin >> a[i];
+        vector<ll> dis;
+        fore(i,0,n){
+            if(a[i] == i+1) continue;
+            else{
+                dis.pb(abs(a[i]-(i+1)));
+            }
+        }
+        ll min_d = dis[0];
+        fore(i,1,SZ(dis)){
+            min_d = __gcd(min_d,dis[i]);
+        }
+        cout << min_d << "\n";
+    }
     return 0;
 }
 

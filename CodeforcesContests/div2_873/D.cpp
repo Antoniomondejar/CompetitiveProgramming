@@ -13,6 +13,13 @@ using namespace std;
 typedef long long ll;
 
 int main(){FIN;
+    ll t; cin >> t;
+    while(t--){
+        ll n; cin >> n;
+        vector<pair<ll,ll>> a(n);
+        fore(i,0,n) cin >> a[i].fst, a[i].snd = i;
+        sort(ALL(a));
+    }
     return 0;
 }
 

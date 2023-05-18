@@ -13,9 +13,12 @@ using namespace std;
 typedef long long ll;
 
 int main(){FIN;
+    ll N, A, B, inp; cin >> N >> A >> B;
+    ll res = 0;
+    fore(i,0,N){
+        cin >> inp;
+        if(A+B == inp) res = i;
+    }
+    cout << res+1 << "\n";
     return 0;
 }
-
-/*
-DIEGO VAGGIONE -> MEJOR PROFE DE FAMAF.
-*/

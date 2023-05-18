@@ -13,9 +13,12 @@ using namespace std;
 typedef long long ll;
 
 int main(){FIN;
+    ll inp; bool p = true;
+    fore(i,0,8){
+        cin >> inp;
+        if(inp == 9) p = false;
+    }
+    if(p) cout << "S\n";
+    else cout << "F\n";
     return 0;
 }
-
-/*
-DIEGO VAGGIONE -> MEJOR PROFE DE FAMAF.
-*/

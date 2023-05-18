@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include "bits/stdc++.h"
 #define mp make_pair
 #define pb push_back
 #define fst first
@@ -13,9 +13,13 @@ using namespace std;
 typedef long long ll;
 
 int main(){FIN;
+    ll n,k; cin >> n >> k;
+    while(k--){
+        if(n%10==0)
+            n/=10;
+        else
+            --n;
+    }
+    cout << n << "\n";
     return 0;
 }
-
-/*
-DIEGO VAGGIONE -> MEJOR PROFE DE FAMAF.
-*/

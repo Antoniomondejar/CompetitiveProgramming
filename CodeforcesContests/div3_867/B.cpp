@@ -13,9 +13,13 @@ using namespace std;
 typedef long long ll;
 
 int main(){FIN;
+    ll t; cin >> t;
+    while(t--){
+        ll n; cin >> n;
+        vector<ll> a(n);
+        fore(i,0,n) cin >> a[i];
+        sort(ALL(a));
+        cout << max(a[0]*a[1], a[n-1]*a[n-2]) << "\n";
+    }
     return 0;
 }
-
-/*
-DIEGO VAGGIONE -> MEJOR PROFE DE FAMAF.
-*/

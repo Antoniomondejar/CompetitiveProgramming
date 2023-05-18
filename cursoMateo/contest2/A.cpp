@@ -13,9 +13,12 @@ using namespace std;
 typedef long long ll;
 
 int main(){FIN;
+    ll t; cin >> t;
+    while(t--){
+        ll a,b,c; cin >> a >> b >> c;
+        if((a>b && b>c) || (c>b && b>a)) cout << b << "\n";
+        if((b>a && a>c) || (c>a && a>b)) cout << a << "\n";
+        if((a>c && c>b) || (b>c && c>a)) cout << c << "\n";
+    }
     return 0;
 }
-
-/*
-DIEGO VAGGIONE -> MEJOR PROFE DE FAMAF.
-*/
