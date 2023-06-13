@@ -1,0 +1,48 @@
+A Hecho
+Toni:
+Nacho: codeando
+Iván:
+B HECHO
+Toni:leyendo
+Nacho:
+Iván:
+C Hecho
+Toni: leyendo
+Nacho: 
+Iván: Lo entiendo pero no se como hacerlo
+D HECHO
+Toni: 
+Nacho:
+Iván:
+E HECHO
+Toni:
+Nacho: resolviendo a mano
+Iván:
+F
+Toni: leido grafos, parece dificil
+Nacho:
+Iván: Leyendo
+G Hecho
+Toni:
+Nacho: Leyendo
+Iván: Geometria, dificultad media
+H HECHO
+Toni:
+Nacho:
+Iván: Parceo, fácil
+I
+Toni:
+Nacho:
+Iván: Interactivo, parece dificil
+J
+Toni:
+Nacho:
+Iván: Grafos, pero no entendí del todo
+K Hecho
+Toni:
+Nacho: 
+Iván: Conteo, Parece fácil
+L
+Toni:
+Nacho:
+Iván: Hecho manuscrito, listo para codear

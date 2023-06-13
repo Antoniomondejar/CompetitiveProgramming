@@ -1,0 +1,42 @@
+A
+Toni:leyendo, probabilidad, valor esperado, no parece facil
+Iván:
+
+B
+Toni: leyendo, no parece tan dificil, querys en rango
+Iván: Trabjando
+
+C
+Toni:leyendo, no parece tan dificil, quizas dp
+Iván:
+
+D
+Toni:arboles, no parece facil, pero ver distancias entre nodos
+Iván:
+
+E
+Toni:
+Iván: Pensandolo
+
+F Hecho
+
+G
+Toni:
+Iván: Interactivo, pero 
+
+H
+Toni:
+Iván: Parece dificil
+
+I HECHO
+
+J HECHO
+
+K HECHO
+
+L Hecho
+
+
+
+
+

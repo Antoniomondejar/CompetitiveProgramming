@@ -12,9 +12,25 @@
 using namespace std;
 typedef long long ll;
 const ll NMAX = 2e5+10;
-const ll MOD = 1e9+7;
-
+ll dp[NMAX];
+ll a[NMAX];
+ll n;
+ll f(ll x){
+    if(x>n-1)return 0;
+    if(dp[x]!=-1)return dp[x];
+    dp[x]=a[x]+f(x+a[x]);
+    return dp[x];
+}
 int main(){FIN;
+    ll t; cin >> t;
+    while(t--){
+        mset(dp,-1);
+        cin >> n;
+        fore(i,0,n) cin >>a[i];
+        ll max_d = 0;
+        fore(i,0,n) max_d = max(max_d, f(i));
+        cout << max_d << "\n";
+    }
     return 0;
 }
 

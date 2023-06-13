@@ -1,0 +1,9 @@
+
+
+
+aabbbaabbababb
+
+k as
+n-k bs
+
+(n k) = n! / ((n-k)!*k!)

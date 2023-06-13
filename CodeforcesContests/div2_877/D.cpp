@@ -15,6 +15,9 @@ const ll NMAX = 2e5+10;
 const ll MOD = 1e9+7;
 
 int main(){FIN;
+    ll n,q; cin >> n >> q;
+    string s; cin >> s;
+    
     return 0;
 }
 

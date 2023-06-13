@@ -8,6 +8,8 @@
         "functional": "cpp",
         "string_view": "cpp",
         "ratio": "cpp",
-        "streambuf": "cpp"
+        "streambuf": "cpp",
+        "iostream": "cpp",
+        "random": "cpp"
     }
 }

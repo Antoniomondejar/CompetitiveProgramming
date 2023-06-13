@@ -1,0 +1,32 @@
+A
+Iván: Leido casi entero, pero no entendí mucho, parece dificil
+Toni:
+B
+Iván: Leido, tengo una idea de como hacerlo, pero llevaria tiempo. En realidad no es tan simple
+Toni:
+C
+Iván:
+Toni:leyendo
+D
+Iván: Leido
+Toni:leyendo, no parece dificil, ver divisibilidad, entra criba en complejidad
+E
+Iván: Leido, ni idea de como hacerlo
+Toni:
+F
+Iván: Leido, parece dificil
+Toni:
+G
+Iván:
+Toni:
+H Hecho
+I
+Iván: Salvo que no haya entendido el enunciado se me ocurre como hacerlo
+Toni:Leyendo, se ve complicado
+J
+Iván: Leido, es de conteo, parece dificil
+Toni:
+K
+Iván: Leido
+Toni:leyendo, cuentas
+

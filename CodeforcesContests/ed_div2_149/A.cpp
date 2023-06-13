@@ -15,6 +15,12 @@ const ll NMAX = 2e5+10;
 const ll MOD = 1e9+7;
 
 int main(){FIN;
+    ll t; cin >> t;
+    while(t--){
+        ll x,k; cin >> x >> k;
+        if(x%k){cout << "1\n" << x << "\n";continue;}
+        cout << "2\n" << x-1 << " " << 1 << "\n";
+    }
     return 0;
 }
 

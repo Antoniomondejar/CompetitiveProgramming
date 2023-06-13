@@ -13,8 +13,16 @@ using namespace std;
 typedef long long ll;
 const ll NMAX = 2e5+10;
 const ll MOD = 1e9+7;
+const ll KMAX = 20;
+ll p2[KMAX];
 
 int main(){FIN;
+    p2[0] = 1;
+    fore(i,1,KMAX) p2[i] = p2[i-1]*2;
+    ll k; cin >> k;
+    vector<ll> a(p2[k]);
+    fore(i,0,p2[k]) cin >> a[i];
+     
     return 0;
 }
 

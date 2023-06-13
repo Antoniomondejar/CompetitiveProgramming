@@ -11,10 +11,23 @@
 #define FIN ios::sync_with_stdio(0);cin.tie(0);cout.tie(0)
 using namespace std;
 typedef long long ll;
-const ll NMAX = 2e5+10;
-const ll MOD = 1e9+7;
+ll vis[305];
+
 
 int main(){FIN;
+    ll t; cin >> t;
+    while(t--){
+        ll n; cin >> n;
+        vector<ll> b(n);
+        fore(i,0,n)cin >> b[i];
+        fore(i,0,n){
+            if(i&1)
+                cout << b[n-1-i/2] << " ";
+            else
+                cout << b[i/2] << " ";
+        }
+        cout << "\n";
+    }
     return 0;
 }
 

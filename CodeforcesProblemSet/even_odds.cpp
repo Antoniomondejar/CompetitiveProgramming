@@ -15,6 +15,15 @@ const ll NMAX = 2e5+10;
 const ll MOD = 1e9+7;
 
 int main(){FIN;
+    ll n, k; cin>>n>>k;
+    if(k>n/2+(n%2)){
+        k = k%(n/2+n%2);
+        ll res = 2*(k==0?n/2:k);
+        cout << res << "\n";
+    } else {
+        ll res = 2*k-1;
+        cout << res << "\n";
+    }
     return 0;
 }
 

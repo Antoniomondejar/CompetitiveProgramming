@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include "bits/stdc++.h"
 #define mp make_pair
 #define pb push_back
 #define fst first
@@ -15,6 +15,23 @@ const ll NMAX = 2e5+10;
 const ll MOD = 1e9+7;
 
 int main(){FIN;
+    ll n; cin >> n;
+    vector<ll> ns(n);
+    ll maxx = 0;
+    vector<ll>ot_div;
+    fore(i,0,n)cin>>ns[i], maxx = max(maxx,ns[i]);
+    ll max_2 = 0;
+    set<ll> max_div;
+    sort(ALL(ns));
+    fore(i,0,n){
+        if(maxx%ns[i] || max_div.count(ns[i])){
+            ot_div.pb(ns[i]);
+        } else {
+            max_div.insert(ns[i]);
+        }
+    }
+    sort(ALL(ot_div));
+    cout << maxx << " " << ot_div[SZ(ot_div)-1] << '\n';
     return 0;
 }
 

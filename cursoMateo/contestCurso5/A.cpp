@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include "bits/stdc++.h"
 #define mp make_pair
 #define pb push_back
 #define fst first
@@ -15,6 +15,14 @@ const ll NMAX = 2e5+10;
 const ll MOD = 1e9+7;
 
 int main(){FIN;
+    ll n; cin>> n;
+    vector<ll> ans;
+    ll k = 0;
+    cout << n << '\n';
+    fore(i,0,n){
+        cout << "1 ";
+    }
+    cout << '\n';
     return 0;
 }
 

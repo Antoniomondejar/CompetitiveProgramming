@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include "bits/stdc++.h"
 #define mp make_pair
 #define pb push_back
 #define fst first
@@ -15,6 +15,23 @@ const ll NMAX = 2e5+10;
 const ll MOD = 1e9+7;
 
 int main(){FIN;
+    ll t; cin >> t;
+    while(t--){
+        ll a,b; cin >> a >> b;
+        if(a-b != 1) {cout << "NO\n";continue;}
+        ll ab = a+b; bool p = true;
+        if(ab%2==0) p = false;
+        if(p){
+            for(ll i = 3; i*i<=ab;i+=2){
+                if(ab%i==0){
+                    p = false;
+                    break;
+                }
+            }
+        }
+        if(p) cout << "YES\n";
+        else cout << "NO\n";
+    }
     return 0;
 }
 

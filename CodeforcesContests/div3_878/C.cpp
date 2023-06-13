@@ -15,6 +15,26 @@ const ll NMAX = 2e5+10;
 const ll MOD = 1e9+7;
 
 int main(){FIN;
+    ll t; cin >> t;
+    while(t--){
+        ll n,k,q; cin>>n>>k>>q;
+        vector<ll> a(n);
+        fore(i,0,n)cin>>a[i];
+        ll count = 0; ll res = 0;
+        fore(i,0,n){
+            if(a[i]<=q)++count;
+            else{
+                if(count >= k){
+                    res += (count-k+1)*(count-k+2)/2;
+                }
+                count = 0;
+            }
+        }
+        if(count>=k){
+            res+=(count-k+1)*(count-k+2)/2;
+        }
+        cout << res << "\n";
+    }
     return 0;
 }
 

@@ -15,6 +15,16 @@ const ll NMAX = 2e5+10;
 const ll MOD = 1e9+7;
 
 int main(){FIN;
+    ll t; cin >> t;
+    while(t--){
+        ll n; cin >> n;
+        vector<ll> a(n);
+        fore(i,0,n) cin>>a[i];
+        fore(i,0,n){
+            cout << n-a[i]+1 << " ";
+        }
+        cout << "\n";
+    }
     return 0;
 }
 

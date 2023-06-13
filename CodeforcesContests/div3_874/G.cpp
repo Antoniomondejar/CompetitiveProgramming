@@ -14,7 +14,18 @@ typedef long long ll;
 const ll NMAX = 2e5+10;
 const ll MOD = 1e9+7;
 
+ll dp[NMAX];
+vector<vector<ll>> g[NMAX];
+
+
 int main(){FIN;
+    ll t; cin >> t;
+    while(t--){
+        ll n; cin >> n;
+        fore(i,0,n-1){
+            
+        }
+    }
     return 0;
 }
 

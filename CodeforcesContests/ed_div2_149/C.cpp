@@ -15,6 +15,16 @@ const ll NMAX = 2e5+10;
 const ll MOD = 1e9+7;
 
 int main(){FIN;
+    ll t; cin >> t;
+    while(t--){
+        string s; cin >> s;
+        if(s[0]=='?')s[0]='0';
+        fore(i,0,s.length()){
+            if(s[i]!='?')continue;
+            else s[i]=s[i-1];
+        }
+        cout << s << "\n";
+    }
     return 0;
 }
 

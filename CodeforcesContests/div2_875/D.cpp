@@ -13,8 +13,25 @@ using namespace std;
 typedef long long ll;
 const ll NMAX = 2e5+10;
 const ll MOD = 1e9+7;
+ll M_2, M;
+
+ll dp[NMAX][640];
 
 int main(){FIN;
+    ll t; cin >> t;
+    while(t--){
+        ll n; cin >> n;
+        vector<ll> a(n), b(n);
+        fore(i,0,n){
+            cin >> a[i];
+        }
+        fore(i,0,n){
+            cin >> b[i];
+        }
+        fore(i,1,640){
+            
+        }
+    }
     return 0;
 }
 

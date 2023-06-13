@@ -11,10 +11,24 @@
 #define FIN ios::sync_with_stdio(0);cin.tie(0);cout.tie(0)
 using namespace std;
 typedef long long ll;
-const ll NMAX = 2e5+10;
-const ll MOD = 1e9+7;
 
 int main(){FIN;
+    ll t; cin >> t;
+    while(t--){
+        ll n,k; cin >> n >> k;
+        vector<ll> b(n); vector<pair<ll,ll>> a(n);
+        fore(i,0,n)cin>>a[i].fst, a[i].snd = i;
+        fore(i,0,n)cin>>b[i];
+        sort(ALL(a)); sort(ALL(b));
+        vector<ll> ans(n);
+        fore(i,0,n){
+            ans[a[i].snd] = b[i];
+        }
+        for(auto i:ans){
+            cout << i << " ";
+        }
+        cout << "\n";
+    }
     return 0;
 }
 
