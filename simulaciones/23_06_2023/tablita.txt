@@ -1,0 +1,47 @@
+A
+Toni:
+Ivan:
+Pietro:
+B Hecho
+C Hecho
+D
+Toni:
+Ivan:
+Pietro: reversear substrings binarios para ir de s1 a s2, dificultad ?
+E
+Toni:leyendo
+Ivan:
+Pietro: fuerza bruta n^3?
+F
+Toni:
+Ivan: Parece fácil
+Pietro: 
+G
+Toni:
+Ivan: Arreglos, parece de dificultad media
+Pietro:
+H Hecho
+I
+Toni:
+Ivan: Árboles, judaroes optimos que no se que es optimo
+Pietro: leyendo, suma de distancias de hojas hasta x?
+J
+Toni:
+Ivan: No entendí bien el enunciado
+Pietro:
+K
+Toni:
+Ivan: Números, parede fácil
+Pietro:
+L
+Toni:
+Ivan: Parece dificil
+Pietro:
+M
+Toni:
+Ivan: Parece dificil
+Pietro:
+N
+Toni:
+Ivan: Parece dificil
+Pietro:
